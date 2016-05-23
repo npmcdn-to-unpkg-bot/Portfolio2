@@ -1,0 +1,62 @@
+/* Font Face
+========================================================================== */
+
+@font-face {
+	font-family: 'quicksandlight';
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+body
+{
+	background-image: url("../assets/gauss.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;	
+    
+    margin: 0;
+}
+
+
+/*.NavBar
+{
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+	text-shadow: -1px -1px 4px rgba(0, 0, 0, .35);
+	filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+
+.NavBar h1{
+    position: absolute;
+	font-family: 'quicksandlight', Helvetica, Arial;
+	background: -webkit-linear-gradient(#33CCFF, #888);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+    font-size:36px;
+	letter-spacing:-2.5px;
+	margin-left:30px;
+
+}
+
+.LinkBar
+{
+    position: relative;
+    overflow: hidden;
+    float: right;
+    display: inline-block;
+    height: inherit;
+}
+
+.LinkBar a
+{
+    position: relative;
+    display:inline-block;
+    overflow:hidden;
+    top:50%;
+    transform: translateY(-50%);
+}*/
+
