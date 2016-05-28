@@ -1,0 +1,23 @@
+{
+  "name"         : "Portfolio2",
+  "version"      : "1.0.0",
+  "description"  : "Angular2 Portfolio",
+  "main"         : "server.js",
+  "author"       : "Alexander Pinkerton",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
+  },
+  "dependencies" : {
+    "express"    : "~4.7.2",
+    "mongoose"   : "~3.6.2",
+    "morgan"     : "~1.2.2",
+    "body-parser": "~1.5.2",
+    "method-override": "~2.1.2",
+    "serve-favicon" : "~2.3.0"
+    }
+}
