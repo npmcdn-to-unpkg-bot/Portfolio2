@@ -15,43 +15,20 @@ export class Parallax {
     
   }
 
-  clicked(event) {
+  moveLayers(event) {
+    
     var OffsetY = -2500;
     var OffsetX = -800;
+    var x = -(event.pageX + OffsetY);
+    var y = -(event.pageY + OffsetX);
 
-    $('.layer1').mousemove(function (e) {
-      var x = -(e.pageX + OffsetY);
-      var y = -(e.pageY + OffsetX);
-      $(this).css('background-position', x / 20 + 'px ' + y / 20 + 'px');
-    });
-    $('.layer2').mousemove(function (e) {
-      var x = -(e.pageX + OffsetY);
-      var y = -(e.pageY + OffsetX);
-      $(this).css('background-position', x / 10 + 'px ' + y / 10 + 'px');
-    });
-    $('.layer3').mousemove(function (e) {
-      var x = -(e.pageX + OffsetY);
-      var y = -(e.pageY + OffsetX);
-      $(this).css('background-position', x / 5 + 'px ' + y / 5 + 'px');
-    });
-    $('.layer4').mousemove(function (e) {
-      var x = -(e.pageX + OffsetY);
-      var y = -(e.pageY + OffsetX);
-      $(this).css('background-position', x / 2 + 'px ' + y / 2 + 'px');
-      
-    });
+    $('.layer1').css('background-position', x / 20 + 'px ' + y / 20 + 'px');   
+    $('.layer2').css('background-position', x / 10 + 'px ' + y / 10 + 'px');   
+    $('.layer3').css('background-position', x / 5 + 'px ' + y / 5 + 'px');  
+    $('.layer4').css('background-position', x / 2 + 'px ' + y / 2 + 'px');
   }
 
 }
-
-
-
-
-
-
-
-
-
 
 
 bootstrap(Parallax);
