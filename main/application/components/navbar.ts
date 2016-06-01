@@ -13,7 +13,7 @@ import {Component} from 'angular2/core';
 
 class NavBar {
   constructor() {
-    this.name = 'Angular 2';
+    
   }
 }
 
