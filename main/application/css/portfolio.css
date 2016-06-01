@@ -13,6 +13,9 @@
   box-sizing: border-box;
 }
 
+body, html{
+	height: 100%;
+}
 
 body
 {
@@ -21,12 +24,12 @@ body
 	background-position: top center;
 	background-size: cover; 
     position: absolute;
+	width: 100%;
   	top: 0;
   	margin: 0;
   	padding: 0;
-  	width: 100%;
   	padding-top: 80px;
-  	/*height: 1900px;*/
+	height: 1000px;
 }
 
 

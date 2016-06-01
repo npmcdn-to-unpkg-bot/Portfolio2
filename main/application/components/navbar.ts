@@ -11,7 +11,7 @@ import {Component} from 'angular2/core';
 
 
 
-class NavBar {
+export class NavBar {
   constructor() {
     
   }
@@ -19,4 +19,4 @@ class NavBar {
 
 
 
-bootstrap(NavBar);
+//bootstrap(NavBar);

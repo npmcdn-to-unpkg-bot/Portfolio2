@@ -31,4 +31,4 @@ export class Parallax {
 }
 
 
-bootstrap(Parallax);
+//bootstrap(Parallax);
