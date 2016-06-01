@@ -49,14 +49,24 @@ header {
   list-style: none;
   display: inline-block;
   font-size: 18px;
-  /*padding: 5px;*/
   font-weight: 300;
   line-height: 80px;
   margin-right: 20px;
   transition: 0.5s ease;
 }
 
+.navbar .nav .github {
+  vertical-align: middle;
+  line-height: inherit;
+}
+
 .navbar .nav .item a {
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	line-height: 26.4px;
   text-decoration: none;
   color: inherit;
   padding:0;
@@ -100,7 +110,7 @@ ul li :hover{
 
 .scrolled.navbar {
   height: 50px; 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: 0.5s ease;
 
 }
@@ -112,9 +122,20 @@ ul li :hover{
   padding: 0;
 }
 
+.scrolled.navbar .nav .github {
+  vertical-align: middle;
+  line-height: inherit;
+}
+
 .scrolled.navbar .nav .item a{
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	line-height: 26.4px;
   text-decoration: none;
-  color: inherit;
+  color: gray;
   padding:0;
 }
 
