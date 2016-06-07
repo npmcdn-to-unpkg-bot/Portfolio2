@@ -11,25 +11,42 @@ import {Component} from 'angular2/core';
 
 
 export class Parallax {
+  
   constructor() {
-    
+    this.lastX = 0;
+    this.lastY = 0;
+    this.offsetY = -2500;
+    this.offsetX = -800;
   }
 
-  moveLayers(event) {
-    
-    var OffsetY = -2500;
-    var OffsetX = -800;
-    var x = -(event.pageX + OffsetY);
-    var y = -(event.pageY + OffsetX);
+  
+  
 
-    document.getElementsByClassName('layer1')[0].style.backgroundPosition = x / 20 + 'px ' + y / 20 + 'px';
-    document.getElementsByClassName('layer2')[0].style.backgroundPosition = x / 10 + 'px ' + y / 10 + 'px';
-    document.getElementsByClassName('layer3')[0].style.backgroundPosition = x / 5 + 'px ' + y / 5 + 'px';
-    document.getElementsByClassName('layer4')[0].style.backgroundPosition = x / 2 + 'px ' + y / 2 + 'px';
+
+  moveLayers(event) {
+
+    //Move background if mouse has moved minimum distance to save computation
+    if (Math.abs(event.pageX - this.lastX) > 25 || Math.abs(event.pageY - this.lastY) > 25) {
+      
+      //Apply Offset
+      var x = -(event.pageX + this.offsetY);
+      var y = -(event.pageY + this.offsetX);
+
+      //Move the background
+      document.getElementsByClassName('layer1')[0].style.backgroundPosition = x / 20 + 'px ' + y / 20 + 'px';
+      document.getElementsByClassName('layer2')[0].style.backgroundPosition = x / 10 + 'px ' + y / 10 + 'px';
+      document.getElementsByClassName('layer3')[0].style.backgroundPosition = x / 5 + 'px ' + y / 5 + 'px';
+      document.getElementsByClassName('layer4')[0].style.backgroundPosition = x / 2 + 'px ' + y / 2 + 'px';
+
+      //Update the last X and Y where a shift occurred.
+      this.lastX = event.pageX;
+      this.lastY = event.pageY;
+    }
+
+
+
+    
 
   }
 
 }
-
-
-//bootstrap(Parallax);
