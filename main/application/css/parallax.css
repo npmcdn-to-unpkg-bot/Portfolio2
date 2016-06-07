@@ -1,8 +1,8 @@
 .parallaxlayer
 {
 	width: 100%;
-	height:1000px;
-	position: fixed;
+	height:100vh;
+	position: absolute;
 	background-position: top center;	
 	background-repeat: no-repeat;
 }

@@ -22,10 +22,11 @@ export class Parallax {
     var x = -(event.pageX + OffsetY);
     var y = -(event.pageY + OffsetX);
 
-    $('.layer1').css('background-position', x / 20 + 'px ' + y / 20 + 'px');   
-    $('.layer2').css('background-position', x / 10 + 'px ' + y / 10 + 'px');   
-    $('.layer3').css('background-position', x / 5 + 'px ' + y / 5 + 'px');  
-    $('.layer4').css('background-position', x / 2 + 'px ' + y / 2 + 'px');
+    document.getElementsByClassName('layer1')[0].style.backgroundPosition = x / 20 + 'px ' + y / 20 + 'px';
+    document.getElementsByClassName('layer2')[0].style.backgroundPosition = x / 10 + 'px ' + y / 10 + 'px';
+    document.getElementsByClassName('layer3')[0].style.backgroundPosition = x / 5 + 'px ' + y / 5 + 'px';
+    document.getElementsByClassName('layer4')[0].style.backgroundPosition = x / 2 + 'px ' + y / 2 + 'px';
+
   }
 
 }
