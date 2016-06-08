@@ -5,6 +5,7 @@
   <title>Alexander Pinkerton</title>
 
   <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
   <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
 
   <!-- Load depedencies  -->
@@ -14,6 +15,7 @@
   <script src="https://npmcdn.com/systemjs@0.19.8/dist/system.src.js"></script>
   <script src="https://npmcdn.com/rxjs@5.0.0-beta.0/bundles/Rx.js"></script>
   <script src="https://npmcdn.com/angular2@2.0.0-beta.0/bundles/angular2.dev.js"></script>
+  <script type="text/javascript" src="lib/jquery.pagepiling.js"></script>
   <script>
     // Config the transpiler to be typescript.
     System.config({transpiler: 'typescript'});
@@ -31,6 +33,8 @@
           $('.navbar').removeClass('scrolled');
         }
     });
+
+
     });
   </script>
 </head>
@@ -38,7 +42,7 @@
 <body>
 
   <portfolio></portfolio>
-  
+
 </body>
 
 </html>

@@ -32,6 +32,11 @@ body
 	/*height: 100%;*/
 }
 
+/*.section.pp-section.pp-table.pp-easing.active{
+	display:table;
+}
 
-
+.section.pp-section.pp-table.pp-easing{
+	display:none;
+}*/
 

@@ -16,7 +16,3 @@ export class NavBar {
     
   }
 }
-
-
-
-//bootstrap(NavBar);
