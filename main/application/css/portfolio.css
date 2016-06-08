@@ -40,3 +40,53 @@ body
 	display:none;
 }*/
 
+.infopane
+{
+	height: 100vh;
+	margin-top: 80px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: grey;
+}
+
+.phonePane
+{
+	float: left;
+	background-color: greenyellow;
+	height: inherit;
+	width: 50%;
+}
+
+.detailPane
+{
+	float: right;
+	background-color: blueviolet;
+	height: inherit;
+	width: 50%;
+}
+
+
+
+
+
+@media only screen and (max-device-width: 480px) {
+
+.phonePane
+{
+	float: none;
+	background-color: greenyellow;
+	height: 50%;
+	width: inherit;
+}
+
+.detailPane
+{
+	float: none;
+	background-color: blueviolet;
+	height: 50%;
+	width: inherit;
+}
+
+
+
+}
