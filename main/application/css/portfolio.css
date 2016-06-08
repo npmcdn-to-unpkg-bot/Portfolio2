@@ -51,6 +51,7 @@ body
 
 .phonePane
 {
+	position: relative;
 	float: left;
 	background-color: greenyellow;
 	height: inherit;
@@ -65,6 +66,16 @@ body
 	width: 50%;
 }
 
+
+.test
+{
+	background-color: darkmagenta;
+	position: absolute;
+	width: 50%;
+	height: 60%;
+	top: 20%;
+    left: 25%;
+}
 
 
 
