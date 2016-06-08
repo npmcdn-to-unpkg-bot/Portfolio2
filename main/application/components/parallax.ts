@@ -15,8 +15,8 @@ export class Parallax {
   constructor() {
     this.lastX = 0;
     this.lastY = 0;
-    this.offsetY = -2500;
-    this.offsetX = -800;
+    this.offsetY = 0;
+    this.offsetX = 0;
     
     //Parallax Distances
     this.minDistance = 25;
