@@ -46,14 +46,14 @@ body
 	margin-top: 80px;
 	margin-left: 10px;
 	margin-right: 10px;
-	background-color: grey;
+	/*background-color: grey;*/
 }
 
 .phonePane
 {
 	position: relative;
 	float: left;
-	background-color: greenyellow;
+	/*background-color: greenyellow;*/
 	height: inherit;
 	width: 50%;
 }
@@ -70,11 +70,23 @@ body
 .test
 {
 	background-color: darkmagenta;
+	background: url("assets/phone.svg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 	position: absolute;
-	width: 50%;
-	height: 60%;
-	top: 20%;
-    left: 25%;
+	width: 70%;
+	height: 90%;
+	top: 5%;
+    left: 15%;
+}
+
+.test img
+{
+	height: 67%;
+    width: 56%;
+    margin-left: 24%;
+    margin-top: 23%;
 }
 
 

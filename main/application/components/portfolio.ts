@@ -17,6 +17,10 @@ import {NavBar} from '../components/navbar.ts';
 class Portfolio {
 
   constructor() {
+    //document.getElementsByClassName("section")[0].style.display = "none";
+    //document.getElementsByClassName("section")[1].style.display = "none";
+    //document.getElementsByClassName("section")[2].style.display = "none";
+    //document.getElementsByClassName("section")[3].style.display = "none";
 
     $('#pagepiling').pagepiling({
       menu: null,
@@ -44,10 +48,12 @@ class Portfolio {
 
       //events
       onLeave: function (index, nextIndex, direction) {
-
+        console.log('Switching')
       },
       afterLoad: function (anchorLink, index) {
         console.log('loaded');
+        //document.getElementsByClassName("section")[index-1].style.display = "table";
+
       },
       afterRender: function () { },
     });
